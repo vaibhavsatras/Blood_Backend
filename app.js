@@ -20,7 +20,7 @@ app.use(cors({
 app.use(express.json());
 
 //Test Rute
-app.get('/',(req,resp)=>{
+app.get('/home',(req,resp)=>{
 
     resp.send('Hello Vaibhav')
 
