@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-    origin: ["https://blood-bank-front-end-plum.vercel.app/"],
+    origin: ["https://blood-bank-front-end-plum.vercel.app"],
     methods:["POST","GET","DELETE"],
     credential: true
 }));
