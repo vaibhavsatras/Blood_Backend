@@ -43,6 +43,8 @@ const userSignIn = async(req,resp)=>{
     try {
 
         const userMatch = await userModel.mathPassword(email,password,role);
+
+        console.log(userMatch)
         
         if(!userMatch) throw new Error('Password is missMatch')
 
